@@ -16,10 +16,11 @@ class Search extends Component {
     onTextChange = (e) => {
     this.setState({[e.target.name]: e.target.value}, () => {
       axios.get(`${this.state.apiUrl}/?key=${this.state.apiKey}&q=${this.state.searchText}&image_type=photo&per_page=${this.state.amount}&safesearch=true`)
-      .then(res => 
-        this.setState({images: res.data.hits}))
+      .then(res => {
+        this.setState({images: res.data.hits})
         .catch(err => console.log(err));
-      });
+      })
+    })
     }
 
   render() { 
