@@ -52,7 +52,7 @@ class Search extends Component {
         <MenuItem value={50} primaryText="50"/>
       </SelectField>
       <br />
-      {this.state.images.length > 0 ? <ImageResults images={this.state.images}/> : null }
+      {this.state.images.length > 0 ? <ImageResults images={this.state.images}/>}
       </div>
     );
   }
