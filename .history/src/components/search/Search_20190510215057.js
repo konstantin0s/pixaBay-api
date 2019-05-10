@@ -10,7 +10,7 @@ class Search extends Component {
     searchText: '',
     amount: 5,
     apiUrl: 'https://pixabay.com/api',
-    apiKey: 'the secret',
+    apiKey: '12332300-397c46a341930e16308a96c47',
     images: []
     }
 
@@ -46,11 +46,11 @@ class Search extends Component {
       />
       <br />
       <SelectField
-          name="amount"
-          floatingLabelText="Amount"
-          value={this.state.amount}
-          onChange={this.onAmountChange}
-        >
+      name="amount"
+      floatingLabelText="Amount"
+      value={this.state.amount}
+      onChange={this.onAmountChange}
+      >
         <MenuItem value={5} primaryText="5"/>
         <MenuItem value={10} primaryText="10"/>
         <MenuItem value={15} primaryText="15"/>
