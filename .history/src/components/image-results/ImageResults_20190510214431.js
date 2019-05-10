@@ -37,7 +37,7 @@ handleClose = () => {
     </span>
   }
   actionIcon={
-    <IconButton onClick={() => this.handleOpen(img.largeImageURL)}>
+    <IconButton>
       <ZoomIn color="white" />
     </IconButton>
   }
