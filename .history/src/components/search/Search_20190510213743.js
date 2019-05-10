@@ -24,9 +24,8 @@ class Search extends Component {
         .then(res => 
           this.setState({images: res.data.hits}))
           .catch(err => console.log(err));
+        });
       }
-    
-      });
     }
 
     onAmountChange = (e, index, value) => {

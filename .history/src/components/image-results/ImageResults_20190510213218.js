@@ -33,7 +33,7 @@ class ImageResults extends Component {
     </IconButton>
   }
   >
-<img src={img.largeImageURL} />
+
   </GridTile>
 ))}
 </GridList>
@@ -42,9 +42,7 @@ class ImageResults extends Component {
     }
 
     return ( 
-      <div>
-        {imageListContent}
-      </div>
+      <div></div>
      );
   }
 }

@@ -42,9 +42,7 @@ class ImageResults extends Component {
     }
 
     return ( 
-      <div>
-        {imageListContent}
-      </div>
+      <div></div>
      );
   }
 }
